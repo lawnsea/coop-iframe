@@ -1,5 +1,6 @@
 <!doctype html>
-  <head><title>a</title></head>
+  <head><title>Parent</title></head>
   <body>
-    <script>console.log(`Am I cross-origin isolated? ${window.crossOriginIsolated ? 'yes!' : 'nope'}`)</script>
+    <script>console.log(`${document.title}: Am I cross-origin isolated? ${window.crossOriginIsolated ? 'yes!' : 'nope'}`)</script>
+    <iframe title="frame" src="./frame"></iframe>
   </body>
